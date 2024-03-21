@@ -31,10 +31,11 @@ class AuthFormState extends State<AuthForm> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 key: _formkey,
                 children: [
+
                   /// username input feild
                   if (!isLogInPage)
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      padding: const EdgeInsets.only(left: 10,right: 10, top: 10),
                       child: TextFormField(
                         keyboardType: TextInputType.emailAddress,
                         key: ValueKey('username'),
